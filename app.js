@@ -185,13 +185,13 @@ function forgeTheFellowShip() {
       for (let i = 0; i < hobbits.length; i++){
         var $currentHobbit = $('#myHobbits li');
         $fellowship.append($currentHobbit);
-        //alert($currentHobbit.html() + ' has joined your party!');
+        alert($currentHobbit.html() + ' has joined your party!');
       };
 
       for (let i = 0; i < buddies.length; i++){
         var $currentBuddy = $('#myBuddies li');
         $fellowship.append($currentBuddy);
-        //alert($currentBuddy.html() + ' has joined your party!');
+        alert($currentBuddy.html() + ' has joined your party!');
       };
 
   // move the hobbits and the buddies to Rivendell
