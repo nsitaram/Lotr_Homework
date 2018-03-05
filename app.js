@@ -30,7 +30,6 @@ var lands = [
   'mordor'
 ];
 
-var $frodo = $('.hobbit').first();
 
 
 // ====================================
@@ -183,16 +182,18 @@ function forgeTheFellowShip() {
       $('body').append($fellowship);
 
       for (let i = 0; i < hobbits.length; i++){
-        var $currentHobbit = $('#myHobbits li');
+        var $currentHobbit = $('#myHobbits :first-child');
         $fellowship.append($currentHobbit);
         alert($currentHobbit.html() + ' has joined your party!');
       };
 
       for (let i = 0; i < buddies.length; i++){
-        var $currentBuddy = $('#myBuddies li');
+        var $currentBuddy = $('#myBuddies :first-child');
         $fellowship.append($currentBuddy);
         alert($currentBuddy.html() + ' has joined your party!');
       };
+
+      $('.hobbit').first().append($('#the-ring'));
 
   // move the hobbits and the buddies to Rivendell
   // create a new div called 'the-fellowship'
